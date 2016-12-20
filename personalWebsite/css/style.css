@@ -1,0 +1,78 @@
+body {
+	background-color: #8F0FD9;
+}
+
+#container {
+	width: 825px;
+	margin: auto;
+	background-color:#FFFFFF;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 18px;
+	box-shadow: 10px 10px 25px #64059B;
+}
+
+#firstWord {
+	font-size: 50px;
+	font-family: Impact, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman";
+	color:#093BD9;
+}
+
+h1 {
+	font-size: 25px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman";
+	color:#8A25CC;
+	text-align: center;
+}
+
+nav {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #093BD9;
+	/*Nav Bar Tutorial http://www.w3schools.com/css/css_navbar.asp*/
+}
+
+li {
+    float: left;
+	/*Nav Bar Tutorial http://www.w3schools.com/css/css_navbar.asp*/
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+	/*Nav Bar Tutorial http://www.w3schools.com/css/css_navbar.asp*/
+}
+
+h2 {
+	font-size: 20px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman";
+	text-align: center;
+	border-bottom: solid;
+	border-width: 2px;
+}
+
+p {
+	width:600px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 18px;
+	text-indent:50px;
+	margin: 5px;
+	float:left;
+}
+
+footer {
+	clear:left;
+	text-align:center;
+}
