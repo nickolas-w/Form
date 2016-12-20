@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Return Form</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+<nav>
+    <ul>
+       	<li><a href="#" accesskey="1">Home</a></li>
+        <li><a href="#" accesskey="i">Login</a></li>
+        <li><a href="#" accesskey="2">Create Account</a></li>
+        <li><a href="#" accesskey="5">FAQ</a></li>
+        <li><a href="#" accesskey="9">Feedback</a></li>
+    </ul>
+</nav>
+
+	<!-- Removed "post" from method to prevent 405 error -->
+	<form name="form" method="" onsubmit="validate();" action="">
+    
+		<h1>Return Form</h1>
+        <br />
+        
+        <label for="firstName">Name:</label>
+	  	<input type="text" id="firstName" name="firstName" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" 
+        placeholder="First" class="blurColor" />
+	  
+      	<input type="text" id="middleInitial" name="middleInitial" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" maxlength="1" 
+        size="1" placeholder="M" />
+        
+      	<input type="text" id="lastName" name="lastName" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" placeholder="Last" />
+        <br />
+        <br />
+        
+        <label for="streetName">Street:</label>
+        <input type="text" id="streetName" name="streetName" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" />
+        
+		<label for="cityName">City:</label>
+        <input type="text" id="cityName" name="cityName" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" />
+        <br />
+        <br />
+        
+        <label for="state">State:</label>
+        <select id="state" name="state" onfocus="formFocus(this)" 
+        onblur="formBlur(this)">
+        	<!-- state option list found at: http://www.freeformatter.com/usa-state-list-html-select.html -->
+        	<option value="--">--</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+			<option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+			<option value="LA">LA</option>
+			<option value="ME">ME</option>
+			<option value="MD">MD</option>
+			<option value="MA">MA</option>
+			<option value="MI">MI</option>
+			<option value="MN">MN</option>
+			<option value="MS">MS</option>
+			<option value="MO">MO</option>
+			<option value="MT">MT</option>
+			<option value="NE">NE</option>
+			<option value="NV">NV</option>
+			<option value="NH">NH</option>
+			<option value="NJ">NJ</option>
+			<option value="NM">NM</option>
+			<option value="NY">NY</option>
+			<option value="NC">NC</option>
+			<option value="ND">ND</option>
+			<option value="OH">OH</option>
+			<option value="OK">OK</option>
+			<option value="OR">OR</option>
+			<option value="PA">PA</option>
+			<option value="RI">RI</option>
+			<option value="SC">SC</option>
+			<option value="SD">SD</option>
+			<option value="TN">TN</option>
+			<option value="TX">TX</option>
+			<option value="UT">UT</option>
+			<option value="VT">VT</option>
+			<option value="VA">VA</option>
+			<option value="WA">WA</option>
+			<option value="WV">WV</option>
+			<option value="WI">WI</option>
+			<option value="WY">WY</option>
+        </select>
+        
+        <label for="zip">Zip:</label> 
+        <input type="text" id="zip" name="zip" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" maxlength="5" 
+        size="1" />
+        <br />
+        <br />
+        <br />
+        
+        <label for="book">Product Type:</label>
+        <br />
+        <input type="radio" name="productType" id="book" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" value="Book" />
+        <label for="book">Book</label>
+        
+        <input type="radio" name="productType" id="cd" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" value="CD" />
+        <label for="cd">CD</label>
+        
+        <input type="radio" name="productType" id="dvd" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" value="DVD" />
+        <label for="dvd">DVD</label>
+        
+        <input type="radio" name="productType" id="download" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" value="Download" />
+        <label for="download">Download</label>
+        <br />
+        <br />
+        
+        <label for="reasonForReturn">Reason For Return:</label>
+        <br />
+    	<textarea rows="6" cols="53" name="reasonForReturn" 
+        id="reasonForReturn" maxlength="256" placeholder="Please enter the reason why you are returning this item."
+        onfocus="formFocus(this)" onblur="formBlur(this)"></textarea>
+        <br />
+        <br />
+        <br />
+        
+        <label for="emailAddress">Email Address:</label>
+        <input type="text" id="emailAddress" onfocus="formFocus(this)" 
+        onblur="formBlur(this)"/>
+        <br />
+        <br />
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" 
+        onfocus="formFocus(this)" onblur="formBlur(this)" 
+        maxlength="30" />
+        <br />
+        <br />
+        
+        <input type="checkbox" name="terms" id="terms" 
+        value="terms" onfocus="formFocus(this)" onblur="formBlur(this)" />Do you agree to the <a href="#" accesskey="8">terms</a>?
+        <br />
+        <br />
+        
+        <div class="g-recaptcha" data-sitekey="6Lc1hg4UAAAAALDUFdfEE_Gn1NjzZLi3hLcGU4DB"></div>
+        <br />
+        
+        <input type="submit" name="submit" id="submit" 
+        value="Submit" onfocus="formFocus(this)" onblur="formBlur(this)" />
+        <br />
+	</form>
+    
+<footer>
+	<p id="footer">Copyright 2016 <a href="mailto:someone@somewhere.com">Contact us</a></p>
+</footer>
+
+</div>
+
+</body>
+</html>

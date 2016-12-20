@@ -1,0 +1,74 @@
+body
+{
+	background-color: #B5080B;
+}
+
+nav 
+{
+	width: 800px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #551718;
+	/*Nav Bar Tutorial http://www.w3schools.com/css/css_navbar.asp*/
+}
+
+li 
+{
+    float: left;
+	/*Nav Bar Tutorial http://www.w3schools.com/css/css_navbar.asp*/
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+	/*Nav Bar Tutorial http://www.w3schools.com/css/css_navbar.asp*/
+}
+
+#container
+{
+	background-color: #FFFFFF;
+	width: 800px;
+	margin: auto;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+form
+{
+	margin:10px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 25px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman";
+}
+
+.focusColor 
+{
+	background-color: #F0F397;
+}
+		
+.blurColor 
+{
+	background-color: #FFFFFF;
+}
+
+#footer
+{
+	text-align:center;
+}
